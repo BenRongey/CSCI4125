@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@dbsvcs.cs.uno.edu">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="BRONGEY">
+      <ObjectId>230</ObjectId>
+      <IntrospectionTimestamp>2017-11-29.16:31:18</IntrospectionTimestamp>
+      <CreatedTimestamp>2017-11-27.13:15:34</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.16:31:17</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="AUDSYS">
+      <ObjectId>7</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="SYSTEM">
+      <ObjectId>8</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="OUTLN">
+      <ObjectId>13</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="GSMADMIN_INTERNAL">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="GSMUSER">
+      <ObjectId>22</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="DIP">
+      <ObjectId>23</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="ORACLE_OCM">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="DBSNMP">
+      <ObjectId>48</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="APPQOSSYS">
+      <ObjectId>49</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="XDB">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="ANONYMOUS">
+      <ObjectId>51</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="GSMCATUSER">
+      <ObjectId>61</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="WMSYS">
+      <ObjectId>62</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="OJVMSYS">
+      <ObjectId>70</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="CTXSYS">
+      <ObjectId>73</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="ORDSYS">
+      <ObjectId>75</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="ORDDATA">
+      <ObjectId>76</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="ORDPLUGINS">
+      <ObjectId>77</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>78</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="MDSYS">
+      <ObjectId>79</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="OLAPSYS">
+      <ObjectId>82</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="MDDATA">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="SPATIAL_WFS_ADMIN_USR">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="SPATIAL_CSW_ADMIN_USR">
+      <ObjectId>90</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="LBACSYS">
+      <ObjectId>92</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="FLOWS_FILES">
+      <ObjectId>94</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>95</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="APEX_040200">
+      <ObjectId>98</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="DVF">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="SCOTT">
+      <ObjectId>102</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="AMARSALI">
+      <ObjectId>176</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="CLAWSON3">
+      <ObjectId>177</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="CMARYAN">
+      <ObjectId>178</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="CMWEST">
+      <ObjectId>179</ObjectId>
+    </schema>
+    <schema id="39" parent="1" name="CSOLANKY">
+      <ObjectId>180</ObjectId>
+    </schema>
+    <schema id="40" parent="1" name="DLDEKERL">
+      <ObjectId>181</ObjectId>
+    </schema>
+    <schema id="41" parent="1" name="JWOODELL">
+      <ObjectId>182</ObjectId>
+    </schema>
+    <schema id="42" parent="1" name="MISLAM3">
+      <ObjectId>183</ObjectId>
+    </schema>
+    <schema id="43" parent="1" name="PDESHPA1">
+      <ObjectId>184</ObjectId>
+    </schema>
+    <schema id="44" parent="1" name="RNEELAM1">
+      <ObjectId>185</ObjectId>
+    </schema>
+    <schema id="45" parent="1" name="SBANDAR2">
+      <ObjectId>186</ObjectId>
+    </schema>
+    <schema id="46" parent="1" name="SGDENTON">
+      <ObjectId>187</ObjectId>
+    </schema>
+    <schema id="47" parent="1" name="SKAHRIMA">
+      <ObjectId>188</ObjectId>
+    </schema>
+    <schema id="48" parent="1" name="SKALLE">
+      <ObjectId>189</ObjectId>
+    </schema>
+    <schema id="49" parent="1" name="AAMINI">
+      <ObjectId>190</ObjectId>
+    </schema>
+    <schema id="50" parent="1" name="ACREYES">
+      <ObjectId>191</ObjectId>
+    </schema>
+    <schema id="51" parent="1" name="ADMARTI4">
+      <ObjectId>192</ObjectId>
+    </schema>
+    <schema id="52" parent="1" name="ADO">
+      <ObjectId>193</ObjectId>
+    </schema>
+    <schema id="53" parent="1" name="AKHOLMES">
+      <ObjectId>194</ObjectId>
+    </schema>
+    <schema id="54" parent="1" name="ARAFIEI">
+      <ObjectId>195</ObjectId>
+    </schema>
+    <schema id="55" parent="1" name="ASAPKOT2">
+      <ObjectId>196</ObjectId>
+    </schema>
+    <schema id="56" parent="1" name="BPANDEY">
+      <ObjectId>197</ObjectId>
+    </schema>
+    <schema id="57" parent="1" name="CHALL3">
+      <ObjectId>198</ObjectId>
+    </schema>
+    <schema id="58" parent="1" name="DSBARROI">
+      <ObjectId>199</ObjectId>
+    </schema>
+    <schema id="59" parent="1" name="EGUREL">
+      <ObjectId>200</ObjectId>
+    </schema>
+    <schema id="60" parent="1" name="EPOLITE">
+      <ObjectId>201</ObjectId>
+    </schema>
+    <schema id="61" parent="1" name="HMANGINI">
+      <ObjectId>202</ObjectId>
+    </schema>
+    <schema id="62" parent="1" name="HTRUONG1">
+      <ObjectId>203</ObjectId>
+    </schema>
+    <schema id="63" parent="1" name="HYFERNAN">
+      <ObjectId>204</ObjectId>
+    </schema>
+    <schema id="64" parent="1" name="JHEMSTRE">
+      <ObjectId>205</ObjectId>
+    </schema>
+    <schema id="65" parent="1" name="MBJUDEH3">
+      <ObjectId>206</ObjectId>
+    </schema>
+    <schema id="66" parent="1" name="MJTHIBOD">
+      <ObjectId>207</ObjectId>
+    </schema>
+    <schema id="67" parent="1" name="MPKELLY1">
+      <ObjectId>208</ObjectId>
+    </schema>
+    <schema id="68" parent="1" name="PPOKHREL">
+      <ObjectId>209</ObjectId>
+    </schema>
+    <schema id="69" parent="1" name="RKHANAL">
+      <ObjectId>210</ObjectId>
+    </schema>
+    <schema id="70" parent="1" name="RWSANDER">
+      <ObjectId>211</ObjectId>
+    </schema>
+    <schema id="71" parent="1" name="SDHUNGA2">
+      <ObjectId>212</ObjectId>
+    </schema>
+    <schema id="72" parent="1" name="SIOCONNE">
+      <ObjectId>214</ObjectId>
+    </schema>
+    <schema id="73" parent="1" name="SMAHAT1">
+      <ObjectId>215</ObjectId>
+    </schema>
+    <schema id="74" parent="1" name="SPRADHA1">
+      <ObjectId>216</ObjectId>
+    </schema>
+    <schema id="75" parent="1" name="SRNAQUIN">
+      <ObjectId>217</ObjectId>
+    </schema>
+    <schema id="76" parent="1" name="WSOBOL">
+      <ObjectId>218</ObjectId>
+    </schema>
+    <schema id="77" parent="1" name="FDWORREL">
+      <ObjectId>219</ObjectId>
+    </schema>
+    <schema id="78" parent="1" name="HMAHDI">
+      <ObjectId>220</ObjectId>
+    </schema>
+    <schema id="79" parent="1" name="MVOETTER">
+      <ObjectId>221</ObjectId>
+    </schema>
+    <schema id="80" parent="1" name="SHASELWA">
+      <ObjectId>222</ObjectId>
+    </schema>
+    <schema id="81" parent="1" name="SSTEINHA">
+      <ObjectId>223</ObjectId>
+    </schema>
+    <schema id="82" parent="1" name="LCUI">
+      <ObjectId>224</ObjectId>
+    </schema>
+    <schema id="83" parent="1" name="SDUWAL">
+      <ObjectId>225</ObjectId>
+    </schema>
+    <schema id="84" parent="1" name="ACMARTI1">
+      <ObjectId>226</ObjectId>
+    </schema>
+    <schema id="85" parent="1" name="AHNGUYE7">
+      <ObjectId>227</ObjectId>
+    </schema>
+    <schema id="86" parent="1" name="AWILKERS">
+      <ObjectId>228</ObjectId>
+    </schema>
+    <schema id="87" parent="1" name="BIBRAHIM">
+      <ObjectId>229</ObjectId>
+    </schema>
+    <schema id="88" parent="1" name="CLIRETT1">
+      <ObjectId>231</ObjectId>
+    </schema>
+    <schema id="89" parent="1" name="DHEMARD">
+      <ObjectId>232</ObjectId>
+    </schema>
+    <schema id="90" parent="1" name="DMDIMAG1">
+      <ObjectId>233</ObjectId>
+    </schema>
+    <schema id="91" parent="1" name="DWSTROUD">
+      <ObjectId>234</ObjectId>
+    </schema>
+    <schema id="92" parent="1" name="GSCHWING">
+      <ObjectId>235</ObjectId>
+    </schema>
+    <schema id="93" parent="1" name="HMTRAN5">
+      <ObjectId>236</ObjectId>
+    </schema>
+    <schema id="94" parent="1" name="JAANDREP">
+      <ObjectId>237</ObjectId>
+    </schema>
+    <schema id="95" parent="1" name="JJEUNESS">
+      <ObjectId>238</ObjectId>
+    </schema>
+    <schema id="96" parent="1" name="JMORANME">
+      <ObjectId>239</ObjectId>
+    </schema>
+    <schema id="97" parent="1" name="KBONGCAS">
+      <ObjectId>240</ObjectId>
+    </schema>
+    <schema id="98" parent="1" name="MASINEGA">
+      <ObjectId>241</ObjectId>
+    </schema>
+    <schema id="99" parent="1" name="MFWRIGHT">
+      <ObjectId>242</ObjectId>
+    </schema>
+    <schema id="100" parent="1" name="NRAYAMAJ">
+      <ObjectId>243</ObjectId>
+    </schema>
+    <schema id="101" parent="1" name="PSPROUSE">
+      <ObjectId>244</ObjectId>
+    </schema>
+    <schema id="102" parent="1" name="SBOTHNER">
+      <ObjectId>245</ObjectId>
+    </schema>
+    <schema id="103" parent="1" name="SSTROMAI">
+      <ObjectId>246</ObjectId>
+    </schema>
+    <schema id="104" parent="1" name="TKNGUYE7">
+      <ObjectId>247</ObjectId>
+    </schema>
+    <schema id="105" parent="1" name="TNNGUYE8">
+      <ObjectId>248</ObjectId>
+    </schema>
+    <schema id="106" parent="1" name="ZSMAIQUE">
+      <ObjectId>249</ObjectId>
+    </schema>
+    <schema id="107" parent="1" name="AKALANDI">
+      <ObjectId>250</ObjectId>
+    </schema>
+    <schema id="108" parent="1" name="KCKNIGH1">
+      <ObjectId>251</ObjectId>
+    </schema>
+    <schema id="109" parent="1" name="MEHSON">
+      <ObjectId>252</ObjectId>
+    </schema>
+    <schema id="110" parent="1" name="RBJOSEPH">
+      <ObjectId>253</ObjectId>
+    </schema>
+    <schema id="111" parent="1" name="DVSYS">
+      <ObjectId>1279990</ObjectId>
+    </schema>
+    <schema id="112" parent="1" name="SYSBACKUP">
+      <ObjectId>2147483617</ObjectId>
+    </schema>
+    <schema id="113" parent="1" name="SYSDG">
+      <ObjectId>2147483618</ObjectId>
+    </schema>
+    <schema id="114" parent="1" name="SYSKM">
+      <ObjectId>2147483619</ObjectId>
+    </schema>
+    <schema id="115" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <table id="116" parent="2" name="BUSINESS_SECTOR">
+      <ObjectId>251089</ObjectId>
+      <CreatedTimestamp>2017-11-27.14:22:44</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.14:22:44</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="117" parent="2" name="COMPANY">
+      <ObjectId>251087</ObjectId>
+      <CreatedTimestamp>2017-11-27.14:22:27</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-28.11:32:01</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="118" parent="2" name="COURSE">
+      <ObjectId>251517</ObjectId>
+      <CreatedTimestamp>2017-11-29.09:09:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.13:16:04</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="119" parent="2" name="COURSE_KS">
+      <ObjectId>251721</ObjectId>
+      <CreatedTimestamp>2017-11-29.13:43:08</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.13:43:08</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="120" parent="2" name="HAS_SKILL">
+      <ObjectId>251515</ObjectId>
+      <CreatedTimestamp>2017-11-29.08:58:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.08:58:23</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="121" parent="2" name="JOB">
+      <ObjectId>251091</ObjectId>
+      <CreatedTimestamp>2017-11-27.14:23:31</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-28.11:22:13</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="122" parent="2" name="JOB_CATE">
+      <ObjectId>251667</ObjectId>
+      <CreatedTimestamp>2017-11-29.12:21:43</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.12:21:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="123" parent="2" name="KNOWLEDGE_CLUSTER">
+      <ObjectId>251764</ObjectId>
+      <CreatedTimestamp>2017-11-29.16:31:17</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.16:31:17</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="124" parent="2" name="KNOWLEDGE_SKILLS">
+      <ObjectId>251360</ObjectId>
+      <CreatedTimestamp>2017-11-28.20:10:14</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-28.20:10:14</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="125" parent="2" name="NAICS">
+      <ObjectId>251045</ObjectId>
+      <CreatedTimestamp>2017-11-27.13:16:18</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.13:16:18</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="126" parent="2" name="PERSON">
+      <ObjectId>251040</ObjectId>
+      <CreatedTimestamp>2017-11-27.13:15:34</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-28.13:50:52</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="127" parent="2" name="PREREQ">
+      <ObjectId>251519</ObjectId>
+      <CreatedTimestamp>2017-11-29.09:10:57</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:10:57</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="128" parent="2" name="REQUIRED_SKILL">
+      <ObjectId>251525</ObjectId>
+      <CreatedTimestamp>2017-11-29.09:18:15</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:18:15</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="129" parent="2" name="SECTION">
+      <ObjectId>251521</ObjectId>
+      <CreatedTimestamp>2017-11-29.09:14:04</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:14:04</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="130" parent="2" name="SOC">
+      <ObjectId>251049</ObjectId>
+      <CreatedTimestamp>2017-11-27.13:19:18</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.13:19:18</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="131" parent="2" name="SOC_LINK">
+      <ObjectId>251051</ObjectId>
+      <CreatedTimestamp>2017-11-27.13:19:43</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.13:19:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="132" parent="2" name="TAKES">
+      <ObjectId>251523</ObjectId>
+      <CreatedTimestamp>2017-11-29.09:16:14</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:16:14</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="133" parent="2" name="WORK_HISTORY">
+      <ObjectId>251093</ObjectId>
+      <CreatedTimestamp>2017-11-27.14:25:24</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.14:25:24</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="134" parent="116" name="COMP_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="135" parent="116" name="NACIS_CODE">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="136" parent="116" name="SYS_C00132208">
+      <ObjectId>251090</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.14:22:44</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.14:22:44</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>COMP_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="137" parent="116" name="SYS_C00132208">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:22:44</ModifiedTimestamp>
+      <ColNames>COMP_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132208</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="138" parent="116" name="SYS_C00132210">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:22:44</ModifiedTimestamp>
+      <ColNames>COMP_ID</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>COMPANY</RefTableName>
+      <RefKeyName>SYS_C00132207</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="139" parent="116" name="SYS_C00132209">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:22:44</ModifiedTimestamp>
+      <ColNames>NACIS_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>NAICS</RefTableName>
+      <RefKeyName>SYS_C00132188</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="140" parent="117" name="COMP_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="141" parent="117" name="WEBSITE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="142" parent="117" name="COMP_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="143" parent="117" name="SYS_C00132207">
+      <ObjectId>251088</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.14:22:27</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.14:22:27</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>COMP_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="144" parent="117" name="SYS_C00132207">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:22:27</ModifiedTimestamp>
+      <ColNames>COMP_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132207</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="145" parent="118" name="C_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="146" parent="118" name="C_TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="147" parent="118" name="C_LEVEL">
+      <Position>3</Position>
+      <DataType>VARCHAR2(25)|0</DataType>
+    </column>
+    <column id="148" parent="118" name="C_DESCRIPTION">
+      <Position>4</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="149" parent="118" name="C_STATUS">
+      <Position>5</Position>
+      <DataType>VARCHAR2(25)|0</DataType>
+    </column>
+    <column id="150" parent="118" name="C_PRICE">
+      <Position>6</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="151" parent="118" name="SYS_C00132398">
+      <ObjectId>251518</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.09:09:00</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:09:00</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>C_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="152" parent="118" name="SYS_C00132398">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:09:00</ModifiedTimestamp>
+      <ColNames>C_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132398</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="153" parent="119" name="KS_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="154" parent="119" name="C_CODE">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="155" parent="119" name="SYS_C00132655">
+      <ObjectId>251722</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.13:43:08</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.13:43:08</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>KS_CODE
+C_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="156" parent="119" name="SYS_C00132655">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.13:43:08</ModifiedTimestamp>
+      <ColNames>KS_CODE
+C_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132655</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="157" parent="119" name="SYS_C00132656">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.13:43:08</ModifiedTimestamp>
+      <ColNames>KS_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>KNOWLEDGE_SKILLS</RefTableName>
+      <RefKeyName>SYS_C00132227</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="158" parent="119" name="SYS_C00132657">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.13:43:08</ModifiedTimestamp>
+      <ColNames>C_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>COURSE</RefTableName>
+      <RefKeyName>SYS_C00132398</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="159" parent="120" name="PER_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="160" parent="120" name="KS_CODE">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="161" parent="120" name="SYS_C00132395">
+      <ObjectId>251516</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.08:58:23</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.08:58:23</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>PER_ID
+KS_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="162" parent="120" name="SYS_C00132395">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.08:58:24</ModifiedTimestamp>
+      <ColNames>PER_ID
+KS_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132395</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="163" parent="120" name="SYS_C00132396">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.08:58:24</ModifiedTimestamp>
+      <ColNames>PER_ID</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>PERSON</RefTableName>
+      <RefKeyName>SYS_C00132187</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="164" parent="120" name="SYS_C00132397">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.08:58:24</ModifiedTimestamp>
+      <ColNames>KS_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>KNOWLEDGE_SKILLS</RefTableName>
+      <RefKeyName>SYS_C00132227</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="165" parent="121" name="JOB_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="166" parent="121" name="EMPL_MODE">
+      <Position>2</Position>
+      <DataType>CHAR(2)|0</DataType>
+    </column>
+    <column id="167" parent="121" name="PAY_RATE">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="168" parent="121" name="PAY_TYPE">
+      <Position>4</Position>
+      <DataType>CHAR(1)|0</DataType>
+    </column>
+    <column id="169" parent="121" name="COMP_ID">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="170" parent="121" name="JOB_LOCATION">
+      <Position>6</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="171" parent="121" name="JOB_TITLE">
+      <Position>7</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="172" parent="121" name="JOB_DESCRIPTION">
+      <Position>8</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="173" parent="121" name="PER_ID">
+      <Position>9</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="174" parent="121" name="CATE_CODE">
+      <Position>10</Position>
+      <DataType>VARCHAR2(7)|0</DataType>
+    </column>
+    <index id="175" parent="121" name="SYS_C00132211">
+      <ObjectId>251092</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.14:23:31</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.14:23:31</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>JOB_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="176" parent="121" name="SYS_C00132211">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:23:31</ModifiedTimestamp>
+      <ColNames>JOB_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132211</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="177" parent="121" name="SYS_C00132213">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:23:31</ModifiedTimestamp>
+      <ColNames>COMP_ID</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>COMPANY</RefTableName>
+      <RefKeyName>SYS_C00132207</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="178" parent="121" name="SYS_C00132214">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:23:31</ModifiedTimestamp>
+      <ColNames>PER_ID</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>PERSON</RefTableName>
+      <RefKeyName>SYS_C00132187</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="179" parent="122" name="CATE_CODE">
+      <Position>1</Position>
+      <DataType>VARCHAR2(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="180" parent="122" name="CATE_TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="181" parent="122" name="CATE_DECRIPTION">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="182" parent="122" name="PAY_RANGE_HIGH">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="183" parent="122" name="PAY_RANGE_LOW">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="184" parent="122" name="SYS_C00132584">
+      <ObjectId>251668</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.12:21:43</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.12:21:43</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>CATE_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="185" parent="122" name="SYS_C00132584">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.12:21:43</ModifiedTimestamp>
+      <ColNames>CATE_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132584</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="186" parent="123" name="KS_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="187" parent="123" name="CATE_CODE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="188" parent="123" name="SYS_C00132699">
+      <ObjectId>251765</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.16:31:17</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.16:31:17</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>KS_CODE
+CATE_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="189" parent="123" name="SYS_C00132699">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.16:31:17</ModifiedTimestamp>
+      <ColNames>KS_CODE
+CATE_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132699</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="190" parent="123" name="SYS_C00132700">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.16:31:17</ModifiedTimestamp>
+      <ColNames>KS_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>KNOWLEDGE_SKILLS</RefTableName>
+      <RefKeyName>SYS_C00132227</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="191" parent="123" name="SYS_C00132701">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.16:31:17</ModifiedTimestamp>
+      <ColNames>CATE_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>JOB_CATE</RefTableName>
+      <RefKeyName>SYS_C00132584</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="192" parent="124" name="KS_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="193" parent="124" name="KS_TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="194" parent="124" name="KS_DESCRIPTION">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="195" parent="124" name="KS_LEVEL">
+      <Position>4</Position>
+      <DataType>VARCHAR2(25)|0</DataType>
+    </column>
+    <index id="196" parent="124" name="SYS_C00132227">
+      <ObjectId>251361</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-28.20:10:14</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-28.20:10:14</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>KS_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="197" parent="124" name="SYS_C00132227">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-28.20:10:14</ModifiedTimestamp>
+      <ColNames>KS_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132227</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="198" parent="125" name="NACIS_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="199" parent="125" name="NACIS_DESCRIPTION">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="200" parent="125" name="SYS_C00132188">
+      <ObjectId>251046</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.13:16:18</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.13:16:18</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>NACIS_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="201" parent="125" name="SYS_C00132188">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.13:16:18</ModifiedTimestamp>
+      <ColNames>NACIS_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132188</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="202" parent="126" name="PER_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="203" parent="126" name="PER_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="204" parent="126" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="205" parent="126" name="GENDER">
+      <Position>4</Position>
+      <DataType>CHAR(1)|0</DataType>
+    </column>
+    <index id="206" parent="126" name="SYS_C00132187">
+      <ObjectId>251041</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.13:15:34</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.13:15:34</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>PER_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="207" parent="126" name="SYS_C00132187">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.13:15:34</ModifiedTimestamp>
+      <ColNames>PER_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132187</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="208" parent="127" name="C_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="209" parent="127" name="PREREQ_CODE">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="210" parent="127" name="SYS_C00132399">
+      <ObjectId>251520</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.09:10:57</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:10:57</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>C_CODE
+PREREQ_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="211" parent="127" name="SYS_C00132399">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:10:57</ModifiedTimestamp>
+      <ColNames>C_CODE
+PREREQ_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132399</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="212" parent="127" name="SYS_C00132400">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:10:57</ModifiedTimestamp>
+      <ColNames>C_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>COURSE</RefTableName>
+      <RefKeyName>SYS_C00132398</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="213" parent="128" name="JOB_CODE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="214" parent="128" name="KS_CODE">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="215" parent="128" name="SYS_C00132406">
+      <ObjectId>251526</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.09:18:15</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:18:15</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>JOB_CODE
+KS_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="216" parent="128" name="SYS_C00132406">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:18:15</ModifiedTimestamp>
+      <ColNames>JOB_CODE
+KS_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132406</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="217" parent="128" name="SYS_C00132407">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:18:15</ModifiedTimestamp>
+      <ColNames>JOB_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>JOB</RefTableName>
+      <RefKeyName>SYS_C00132211</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="218" parent="128" name="SYS_C00132408">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:18:15</ModifiedTimestamp>
+      <ColNames>KS_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>KNOWLEDGE_SKILLS</RefTableName>
+      <RefKeyName>SYS_C00132227</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="219" parent="129" name="SEC_NUM">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="220" parent="129" name="SEC_YEAR">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="221" parent="129" name="SEC_OFFERED_BY">
+      <Position>3</Position>
+      <DataType>VARCHAR2(25)|0</DataType>
+    </column>
+    <column id="222" parent="129" name="SEC_FORMAT">
+      <Position>4</Position>
+      <DataType>VARCHAR2(25)|0</DataType>
+    </column>
+    <column id="223" parent="129" name="SEC_PRICE">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="224" parent="129" name="SEC_DATE_COMP">
+      <Position>6</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="225" parent="129" name="C_CODE">
+      <Position>7</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="226" parent="129" name="SYS_C00132401">
+      <ObjectId>251522</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.09:14:04</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:14:04</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>SEC_NUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="227" parent="129" name="SYS_C00132401">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:14:04</ModifiedTimestamp>
+      <ColNames>SEC_NUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132401</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="228" parent="129" name="SYS_C00132402">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:14:04</ModifiedTimestamp>
+      <ColNames>C_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>COURSE</RefTableName>
+      <RefKeyName>SYS_C00132398</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="229" parent="130" name="GROUP_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="230" parent="130" name="DETAILED_OCCUPATION">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="231" parent="130" name="SOC_DESCRIPTION">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="232" parent="130" name="SYS_C00132191">
+      <ObjectId>251050</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.13:19:18</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.13:19:18</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>GROUP_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="233" parent="130" name="SYS_C00132191">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.13:19:18</ModifiedTimestamp>
+      <ColNames>GROUP_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132191</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="234" parent="131" name="GROUP_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="235" parent="131" name="PARENT_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="236" parent="131" name="SYS_C00132192">
+      <ObjectId>251052</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.13:19:43</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.13:19:43</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>GROUP_ID
+PARENT_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="237" parent="131" name="SYS_C00132192">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.13:19:43</ModifiedTimestamp>
+      <ColNames>GROUP_ID
+PARENT_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132192</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="238" parent="131" name="SYS_C00132193">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.13:19:43</ModifiedTimestamp>
+      <ColNames>GROUP_ID</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>SOC</RefTableName>
+      <RefKeyName>SYS_C00132191</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="239" parent="132" name="PER_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="240" parent="132" name="SEC_NUM">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="241" parent="132" name="SYS_C00132403">
+      <ObjectId>251524</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-29.09:16:14</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-29.09:16:14</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>PER_ID
+SEC_NUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="242" parent="132" name="SYS_C00132403">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:16:14</ModifiedTimestamp>
+      <ColNames>PER_ID
+SEC_NUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132403</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="243" parent="132" name="SYS_C00132404">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:16:14</ModifiedTimestamp>
+      <ColNames>PER_ID</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>PERSON</RefTableName>
+      <RefKeyName>SYS_C00132187</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="244" parent="132" name="SYS_C00132405">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-29.09:16:14</ModifiedTimestamp>
+      <ColNames>SEC_NUM</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>SECTION</RefTableName>
+      <RefKeyName>SYS_C00132401</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="245" parent="133" name="PER_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="246" parent="133" name="JOB_CODE">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="247" parent="133" name="DATE_START">
+      <Position>3</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="248" parent="133" name="DATE_END">
+      <Position>4</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="249" parent="133" name="SYS_C00132215">
+      <ObjectId>251094</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-27.14:25:24</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-27.14:25:24</ModifiedTimestamp>
+      <TablespaceName>CLASSES</TablespaceName>
+      <ColNames>PER_ID
+JOB_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="250" parent="133" name="SYS_C00132215">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:25:24</ModifiedTimestamp>
+      <ColNames>PER_ID
+JOB_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00132215</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="251" parent="133" name="SYS_C00132216">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:25:24</ModifiedTimestamp>
+      <ColNames>PER_ID</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>PERSON</RefTableName>
+      <RefKeyName>SYS_C00132187</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="252" parent="133" name="SYS_C00132217">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-11-27.14:25:24</ModifiedTimestamp>
+      <ColNames>JOB_CODE</ColNames>
+      <RefSchemaName>BRONGEY</RefSchemaName>
+      <RefTableName>JOB</RefTableName>
+      <RefKeyName>SYS_C00132211</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+  </database-model>
+</dataSource>
