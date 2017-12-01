@@ -20,22 +20,24 @@ INSERT INTO PERSON VALUES (19, 'Gordon Morgan', 'gordan.morgan@uno.edu', 'M');
 INSERT INTO PERSON VALUES (20, 'Andy Smith', 'andy.smith@uno.edu', 'M');
 INSERT INTO PERSON VALUES (21, 'Ann Perkins', 'ann.perkins@uno.edu', 'F');
 INSERT INTO PERSON VALUES (22, 'Michael Scott', 'michael.scott@uno.edu', 'F');
+INSERT INTO PERSON VALUES (23, 'Dwight Schrute', 'dwight.schrute@uno.edu', 'M');
+INSERT INTO PERSON VALUES (24, 'Ron Swanson', 'ron.swanson@uno.edu', 'M');
 
-INSERT INTO COMPANY VALUES (1, 'www.ge.com', 'General Electric');
-INSERT INTO COMPANY VALUES (2, 'www.apple.com', 'Apple');
-INSERT INTO COMPANY VALUES (3, 'www.google.com', 'Google');
-INSERT INTO COMPANY VALUES (4, 'www.uber.com', 'Uber');
-INSERT INTO COMPANY VALUES (5, 'www.lyft.com', 'Lyft');
-INSERT INTO COMPANY VALUES (6, 'www.microsoft.com', 'Microsoft');
-INSERT INTO COMPANY VALUES (7, 'www.ibm.com', 'IBM');
-INSERT INTO COMPANY VALUES (8, 'www.cisco.com', 'Cisco Solutions');
-INSERT INTO COMPANY VALUES (9, 'www.oracle.com', 'Oracle');
-INSERT INTO COMPANY VALUES (10, 'www.amazon.com', 'Amazon');
-INSERT INTO COMPANY VALUES (11, 'www.yahoo.com', 'Yahoo');
-INSERT INTO COMPANY VALUES (12, 'www.walmart.com', 'Wal-Mart'),
-INSERT INTO COMPANY VALUES (13, 'www.berkshirehathaway.com', 'Berkshire Hathaway');
-INSERT INTO COMPANY VALUES (14, 'www.gm.com', 'General Motors');
-INSERT INTO COMPANY VALUES (15, 'www.exxon.com', 'Exxon Mobile');
+INSERT INTO COMPANY VALUES (1, 'www.ge.com', 'General Electric', 'Industrial');
+INSERT INTO COMPANY VALUES (2, 'www.apple.com', 'Apple', 'Technology');
+INSERT INTO COMPANY VALUES (3, 'www.google.com', 'Google', 'Technology');
+INSERT INTO COMPANY VALUES (4, 'www.uber.com', 'Uber', 'Technology');
+INSERT INTO COMPANY VALUES (5, 'www.lyft.com', 'Lyft', 'Technology');
+INSERT INTO COMPANY VALUES (6, 'www.microsoft.com', 'Microsoft', 'Technology');
+INSERT INTO COMPANY VALUES (7, 'www.ibm.com', 'IBM', 'Technology');
+INSERT INTO COMPANY VALUES (8, 'www.cisco.com', 'Cisco Solutions', 'Technology');
+INSERT INTO COMPANY VALUES (9, 'www.oracle.com', 'Oracle', 'Technology');
+INSERT INTO COMPANY VALUES (10, 'www.amazon.com', 'Amazon', 'Retail');
+INSERT INTO COMPANY VALUES (11, 'www.yahoo.com', 'Yahoo', 'Technology');
+INSERT INTO COMPANY VALUES (12, 'www.walmart.com', 'Wal-Mart', 'Retail'),
+INSERT INTO COMPANY VALUES (13, 'www.berkshirehathaway.com', 'Berkshire Hathaway', 'Financial');
+INSERT INTO COMPANY VALUES (14, 'www.gm.com', 'General Motors', 'Automotive');
+INSERT INTO COMPANY VALUES (15, 'www.exxon.com', 'Exxon Mobile', 'Energy');
 
 INSERT INTO JOB VALUES (1, 'FT', 100000, 'S', 2, 'Cuppertino, CA', 'Network Architecht', 'Takes care of Server Farms', 15, '15-1143');
 INSERT INTO JOB VALUES (2, 'PT', 36, 'H', 1, 'New Orleans, LA', 'Front-End Developer', 'Slaves for BIG GE', 1, '15-1132');
@@ -50,6 +52,8 @@ INSERT INTO JOB VALUES (10, 'PT', 19, 'H', 10, 'Seattle, WA', 'Software Engineer
 INSERT INTO JOB VALUES (11, 'FT', 150000, 'S', 10, 'Seattle, WA', 'Full-Stack Developer', 'Supervisory Programmer Role/ Pod Leader', NULL, '15-1131');
 INSERT INTO JOB VALUES (12, 'FT', 95000, 'S', 10, 'Atlanta, GA', 'IT Specialist', 'Network and Computer Support', 21, '15-1152');
 INSERT INTO JOB VALUES (13, 'FT', 48000, 'S', 10, 'Rapid City, SD', 'Help Desk Call Center', 'Phone and chat room network help', 22, '15-1151');
+INSERT INTO JOB VALUES (14, 'FT', 200000, 'S', 14, 'Detroit, MI', 'Vehicle Systems Programmer', 'Vehicular Systems Software Engineer', NULL, '15-1132');
+INSERT INTO JOB VALUES (15, 'FT', 240000, 'S', 14, 'Detroit, MI', 'Security Analyst', 'Vehicular Systems Security Analyst', NULL, '15-1122');
 
 INSERT INTO WORK_HISTORY VALUES (1, 2, '2016-05-30', NULL);
 INSERT INTO WORK_HISTORY VALUES (7, 3, '2001-07-22', '2017-01-09');
@@ -78,6 +82,7 @@ INSERT INTO KNOWLEDGE_SKILLS VALUES (9, 'Low Management', 'Small leadership skil
 INSERT INTO KNOWLEDGE_SKILLS VALUES (10, 'Mid Management', 'Average leadership skill', 'Intermediate');
 INSERT INTO KNOWLEDGE_SKILLS VALUES (11, 'Upper Management', 'Advanced leadership skill', 'Advanced');
 INSERT INTO KNOWLEDGE_SKILLS VALUES (12, 'System Administrator', 'SYSADMIN knowledge', 'Intermediate');
+INSERT INTO KNOWLEDGE_SKILLS VALUES (13, 'Information Assurance', 'IT/Computer Security', 'Advanced');
 
 INSERT INTO HAS_SKILL VALUES (1, 1);
 INSERT INTO HAS_SKILL VALUES (1, 4);
@@ -86,6 +91,12 @@ INSERT INTO HAS_SKILL VALUES (1, 7);
 INSERT INTO HAS_SKILL VALUES (1, 9);
 INSERT INTO HAS_SKILL VALUES (1, 10);
 INSERT INTO HAS_SKILL VALUES (1, 12);
+INSERT INTO HAS_SKILL VALUES (2, 5);
+INSERT INTO HAS_SKILL VALUES (23, 1);
+INSERT INTO HAS_SKILL VALUES (23, 3);
+INSERT INTO HAS_SKILL VALUES (23, 11);
+INSERT INTO HAS_SKILL VALUES (24, 6);
+
 
 INSERT INTO REQUIRED_SKILL VALUES (1, 12);
 INSERT INTO REQUIRED_SKILL VALUES (2, 1);
@@ -96,5 +107,68 @@ INSERT INTO REQUIRED_SKILL VALUES (5, 1);
 INSERT INTO REQUIRED_SKILL VALUES (5, 3);
 INSERT INTO REQUIRED_SKILL VALUES (5, 11);
 INSERT INTO REQUIRED_SKILL VALUES (6, 8);
+INSERT INTO REQUIRED_SKILL VALUES (13, 6);
+INSERT INTO REQUIRED_SKILL VALUES (14, 2);
+INSERT INTO REQUIRED_SKILL VALUES (15, 13);
 
-INSERT INTO JOB_CATE ();
+INSERT INTO JOB_CATE VALUES ('15-1122', 'Information Security Analyst', 'Penetration Testing/Security Monitoring', 275000, 75000);
+INSERT INTO JOB_CATE VALUES ('15-1131', 'Computer Programmer', 'General Purpose Software Engineer', 250000, 45000);
+INSERT INTO JOB_CATE VALUES ('15-1132', 'Software Developer, Applications', 'Creates app-specific software', 150000, 40000);
+INSERT INTO JOB_CATE VALUES ('15-1133', 'Software Developer, Systems Software', 'Creates systems-specific programs', 200000, 45000);
+INSERT INTO JOB_CATE VALUES ('15-1141', 'Database Administrator', 'Creates SQL Queries, EW', 200000, 45000);
+INSERT INTO JOB_CATE VALUES ('15-1143', 'Computer Network Architect', 'Takes care of Server Farms', 250000, 60000);
+INSERT INTO JOB_CATE VALUES ('15-1151', 'Computer User Support Specialist', 'Assists in troubleshooting and setup of IT', 100000, 36000);
+INSERT INTO JOB_CATE VALUES ('15-1152', 'Computer Network Support Specialist', 'Assists in troubleshooting networks/connectivity', 130000, 30000);
+
+INSERT INTO COURSE VALUES (1, 'JAVA 1', 'Beginner', 'Basic Software Development via JAVA', 'A', 600);
+INSERT INTO COURSE VALUES (2, 'Databases', 'Intermediate', 'Learn SQL Basics and DB managment', 'A', 1000);
+INSERT INTO COURSE VALUES (3, 'C', 'Intermediate', 'Learn C and C++', 'A', 700);
+INSERT INTO COURSE VALUES (4, 'Intro to IT', 'Beginner', 'Learn the basics of IT Troubleshooting', 'A', 400);
+INSERT INTO COURSE VALUES (5, 'Advanced Full Stack Dev', 'Advanced', 'Learn Upper Management', 'A', 2200);
+INSERT INTO COURSE VALUES (6, 'Computer Organization', 'Intermediate', 'Learn the fundamentals of Computer Science', 'A', 1000);
+INSERT INTO COURSE VALUES (7, 'Java 2', 'Intermediate', 'Learn Intermediate Java and Data Structures', 'A', 1200);
+INSERT INTO COURSE VALUES (8, 'Advanced Programming', 'Advanced', 'Learn CI/CD Techniques and MVC programming', 'A', 1800)
+INSERT INTO COURSE VALUES (9, 'Information Assurance', 'Advanced', 'Learn Pentesting and security', 'A', 950);
+
+INSERT INTO COURSE_KS VALUES (1, 1);
+INSERT INTO COURSE_KS VALUES (4, 2);
+INSERT INTO COURSE_KS VALUES (2, 3);
+INSERT INTO COURSE_KS VALUES (3, 3);
+INSERT INTO COURSE_KS VALUES (6, 4);
+INSERT INTO COURSE_KS VALUES (7, 6);
+INSERT INTO COURSE_KS VALUES (5, 4);
+INSERT INTO COURSE_KS VALUES (8, 5);
+INSERT INTO COURSE_KS VALUES (9, 4);
+INSERT INTO COURSE_KS VALUES (10, 6);
+INSERT INTO COURSE_KS VALUES (11, 5);
+INSERT INTO COURSE_KS VALUES (12, 2);
+INSERT INTO COURSE_KS VALUES (13, 9);
+
+INSERT INTO SECTION VALUES (1, 2017, 'UNO', 'In Class w/ Lab', 600, '2017-12-05', 1);
+INSERT INTO SECTION VALUES (2, 2017, 'UNO', 'In Class w/ Lab', 700, '2017-12-05', 3);
+INSERT INTO SECTION VALUES (3, 2018, 'LSU', 'Online', 1000, '2018-05-10', 2);
+INSERT INTO SECTION VALUES (4, 2018, 'UNO', 'In Class w/ Lab', 2200, '2018-05-10', 5);
+INSERT INTO SECTION VALUES (5, 2017, 'UNO', 'In Class w/ Lab', 1200, '2017-12-05', 7);
+INSERT INTO SECTION VALUES (6, 2017, 'UNO', 'In Class', 1000, '2017-12-05', 6);
+INSERT INTO SECTION VALUES (7, 2017, 'LSU', 'In Class', 1800, '2017-12-05', 8);
+INSERT INTO SECTION VALUES (8, 2017, 'Tulane', 'Online', 400, '2017-12-05', 4);
+INSERT INTO SECTION VALUES (9, 2018, 'UNO', 'In Class', 240, '2018-05-10', 4);
+INSERT INTO SECTION VALUES (10, 2018, 'UNO', 'In Class w/ Lab', 600, '2018-05-10', 1);
+INSERT INTO SECTION VALUES (11, 2017, 'UNO', 'In Class w/ Lab', 1150, '2017-12-05', 9);
+
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (1, '15-1131');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (2, '15-1133');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (3, '15-1133');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (4, '15-1141');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (5, '15-1151');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (6, '15-1151');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (7, '15-1152');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (8, '15-1152');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (9, '15-1131');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (10, '15-1131');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (11, '15-1131');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (12, '15-1141');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (13, '15-1122');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (1, '15-1132');
+INSERT INTO KNOWLEDGE_CLUSTER VALUES (2, '15-1143');
+

@@ -100,15 +100,14 @@ public class Main {
         int comp_id = input.nextInt();
 
         String printAvailableJobs = ""
-                + "SELECT JOB_CODE FROM JOB WHERE COMP_ID = ? \n"
-                + "MINUS \n"
-                + "SELECT JOB_CODE FROM JOB WHERE PER_ID IS NULL";
+                + "SELECT JOB_CODE "
+                + "FROM JOB WHERE PER_ID IS NULL AND COMP_ID = ?";
 
         statement = connect.prepareStatement(printAvailableJobs);
         statement.setInt(1, comp_id);
         ResultSet result = statement.executeQuery();
 
-        if (result.isBeforeFirst() == true) {
+        if (result.isBeforeFirst() == false) {
             System.out.println("This company has no jobs available");
             return;
         } else {
@@ -129,22 +128,30 @@ public class Main {
             System.out.println("Enter the course id");
             c_code = input.nextInt();
 
-            temporary = "Insert into takes Values(?, ?)";
+            temporary = "INSERT INTO TAKES VALUES (?, ?) ";
             statement = connect.prepareStatement(temporary);
             statement.setInt(1, per_id);
             statement.setInt(2, c_code);
             statement.executeUpdate();
 
-            temporary = "SELECT title, c_code \n"
-                    + "FROM course \n"
-                    + "WHERE NOT EXISTS ( \n"
-                    + "SELECT ks_code \n"
-                    + "FROM required_skill \n"
-                    + "WHERE job_code = ? \n"
-                    + "MINUS \n"
-                    + "SELECT ks_code \n"
-                    + "FROM course_ks \n"
-                    + "WHERE course.c_code = course_ks.c_code)";
+            temporary = "WITH Missing_Skills (KS_CODE) AS ( "
+                + "SELECT KS_CODE "
+                + "FROM REQUIRED_SKILL "
+                + "WHERE JOB_CODE = ? "
+                + "MINUS "
+                + "SELECT KS_CODE "
+                + "FROM HAS_SKILL "
+                + "WHERE PER_ID = ?) "
+
+                + "SELECT C_CODE, C_TITLE "
+                + "FROM COURSE, Missing_Skills "
+                + "WHERE NOT EXISTS( "
+                + "SELECT KS_CODE "
+                + "FROM Missing_Skills "
+                + "MINUS "
+                + "SELECT KS_CODE "
+                + "FROM COURSE_KS "
+                + "WHERE COURSE.C_CODE = COURSE_KS.C_CODE)";
 
             statement = connect.prepareStatement(temporary);
             statement.setInt(1, job_code);
