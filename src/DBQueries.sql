@@ -141,6 +141,8 @@ WHERE SEC_DATE_COMP = (SELECT MIN(SEC_PRICE) FROM Corses_Missing NATURAL JOIN SE
 
 
 /* 12. If query #9 returns nothing, then find the course sets that their combination covers all the missing knowledge/ skills for a person to pursue a specific job. The considered course sets will not include more than three courses. If multiple course sets are found, list the course sets (with their course IDs) in the order of the ascending order of the course sets’ total costs. */
+
+/* This query doesn't work for our DB.  It is an exact copy of an answer given by Dr. Tu in class */
 WITH CourseSet_Skill(csetID, ks_code) AS (
   SELECT csetID, ks_code
   FROM CourseSet CSet JOIN course_ks CS ON CSet.c_code1=CS.c_code
@@ -167,228 +169,261 @@ WHERE CSSk.csetID = Cset.csetID
 
 SELECT c_code1, c_code2, c_code3
 FROM Cover_CSet NATURAL JOIN CourseSet
-WHERE size = (SELECT MIN(SIZE) FROM Cover_CSet);
+WHERE size = (SELECT MIN(SIZE) FROM Cover_CSet)
 
 
-/* 13. Given a person’s identifier, list all the job categories that a person is qualified for.
---looks like division but not.  backwards in a sence and not number of variables needed for division */
-SELECT cate_code, cate_decription
-FROM job_cate JC
+/* 13. Given a person’s identifier, list all the job categories that a person is qualified for. */
+SELECT CATE_CODE, CATE_DECRIPTION
+FROM JOB_CATE JC
 WHERE NOT EXISTS(
-    SELECT ks_code
-    FROM knowledge_cluster KC
-    WHERE JC.cate_code = KC.cate_code
+    SELECT KS_CODE
+    FROM KNOWLEDGE_CLUSTER KC
+    WHERE JC.CATE_CODE = KC.CATE_CODE
     MINUS
-    SELECT ks_code
-    FROM has_skill
-    WHERE per_id = 1);
+    SELECT KS_CODE
+    FROM HAS_SKILL
+    WHERE PER_ID = ?)
 
 
 /* 14. Given a person’s identifier, find the job with the highest pay rate for this person according to his/her skill possession. */
-WITH quilified_for(job_code) AS (
-    SELECT job_code
-    FROM job J
+WITH Qualified_For(JOB_CODE) AS (
+    SELECT JOB_CODE
+    FROM JOB J
     WHERE NOT EXISTS(
-        SELECT ks_code
-        FROM required_skill RS
-        WHERE J.job_code = RS.job_code
+        SELECT KS_CODE
+        FROM REQUIRED_SKILL RS
+        WHERE J.JOB_CODE = RS.JOB_CODE
         MINUS
-        SELECT ks_code
-        FROM has_skill
-        WHERE per_id = 1)
+        SELECT KS_CODE
+        FROM HAS_SKILL
+        WHERE HAS_SKILL.PER_ID = ?)
 ),
-    Total_pay(job_code, salary) AS (
-      SELECT job_code,
+    Total_pay(JOB_CODE, SALARY) AS (
+      SELECT JOB_CODE,
         sum(CASE WHEN PAY_TYPE='H' THEN JOB.PAY_RATE*1920
             WHEN PAY_TYPE='S' THEN PAY_RATE
             END) SALARY
       FROM JOB NATURAL JOIN WORK_HISTORY
-      Where DATE_END is NULL
-      GROUP BY job_code
+      WHERE DATE_END IS NULL
+      GROUP BY JOB_CODE
   )
 
-SELECT job_code, salary
-FROM quilified_for NATURAL JOIN Total_pay
-WHERE salary = (SELECT MAX(salary) FROM Total_pay);
+SELECT JOB_CODE, SALARY
+FROM Qualified_For NATURAL JOIN Total_pay
+WHERE SALARY = (SELECT MAX(SALARY) FROM Total_pay)
 
 
 /* 15. Given a job code, list all the names along with the emails of the persons who are qualified for this job. */
-SELECT per_name, email
-FROM person P
+SELECT PER_NAME, EMAIL
+FROM PERSON P
 WHERE NOT EXISTS(
-    SELECT ks_code
-    FROM required_skill
-    WHERE job_code = 5
+    SELECT KS_CODE
+    FROM REQUIRED_SKILL
+    WHERE JOB_CODE = ?
     MINUS
-    SELECT ks_code
-    FROM has_skill HS
-    WHERE P.per_id = HS.per_id);
+    SELECT KS_CODE
+    FROM HAS_SKILL HS
+    WHERE P.PER_ID = HS.PER_ID)
 
 
 /* 16. When a company cannot find any qualified person for a job, a secondary solution is to find a person who is almost qualified to the job. Make a “missing-one” list that lists people who miss only one skill for a specified job. */
 
-WITH Missing_Skills (per_id, ks_code) AS (
-  SELECT per_id, ks_code
-  FROM person, required_skill
-  WHERE job_code = 2
+WITH Missing_Skills (PER_ID, KS_CODE) AS (
+  SELECT PER_ID, KS_CODE
+  FROM PERSON, REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
   SELECT *
-  FROM has_skill),
+  FROM HAS_SKILL),
 
-    Missing_Count (per_id, cnt) AS (
-      SELECT per_id, COUNT(ks_code) cnt
+    Missing_Count (PER_ID, CNT) AS (
+      SELECT PER_ID, COUNT(KS_CODE) CNT
       FROM Missing_Skills
-      GROUP BY per_id)
+      GROUP BY PER_ID)
 
-SELECT per_id
+SELECT PER_ID
 FROM Missing_Count
-WHERE cnt = 1;
+WHERE CNT = 1
+
 /* 17. List each of the skill code and the number of people who misses the skill and are in the missing-one list for a given job code in the ascending order of the people counts. */
 
-WITH Missing_Skills (per_id, ks_code) AS (
-  SELECT per_id, ks_code
-  FROM person, required_skill
-  WHERE job_code = 1
+WITH Missing_Skills (PER_ID, KS_CODE) AS (
+  SELECT PER_ID, KS_CODE
+  FROM PERSON, REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
   SELECT *
-  FROM has_skill),
+  FROM HAS_SKILL),
 
-    Missing_Count (ks_code, cnt) AS (
-      SELECT ks_code, COUNT(per_id) cnt
+    Missing_Count (KS_CODE, CNT) AS (
+      SELECT KS_CODE, COUNT(PER_ID) CNT
       FROM Missing_Skills
-      GROUP BY ks_code)
+      GROUP BY KS_CODE)
 
 SELECT *
 FROM Missing_Count
-ORDER BY cnt ASC;
+ORDER BY CNT ASC
+
 /* 18.  Suppose there is a new job that has nobody qualified. List the persons who miss the least number of skills that are required by this job and report the “least number”. */
 
+/* TODO FIX THIS ONE */
 
-WITH Missing_Skills (per_id, ks_code) AS (
-  SELECT per_id, ks_code
-  FROM person, required_skill
-  WHERE job_code = ?
+WITH Missing_Skills (PER_ID, KS_CODE) AS (
+  SELECT PER_ID, KS_CODE
+  FROM PERSON, REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
   SELECT *
-  FROM has_skill),
+  FROM HAS_SKILL),
 
-    Missing_Count (per_id, cnt) AS (
-      SELECT per_id, COUNT(ks_code) cnt
+    Missing_Count (PER_ID, CNT) AS (
+      SELECT PER_ID, COUNT(KS_CODE) CNT
       FROM Missing_Skills
-      GROUP BY per_id),
+      GROUP BY PER_ID),
 
-    SELECT per_id
+  SELECT per_id
   FROM Missing_Count
-  WHERE cnt = (SELECT MIN(cnt)
+  WHERE CNT = (SELECT MIN(CNT)
   FROM Missing_Count);
+
 /* 19. For a specified job code and a given small number k, make a “missing-k” list that lists the people’s IDs and the number of missing skills for the people who miss only up to k skills in the ascending order of missing skills */
 
-WITH Missing_Skills (per_id, ks_code) AS (
-  SELECT per_id, ks_code
-  FROM person, required_skill
-  WHERE job_code = 1
+WITH Missing_Skills (PER_ID, KS_CODE) AS (
+  SELECT PER_ID, KS_CODE
+  FROM PERSON, REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
   SELECT *
-  FROM has_skill),
+  FROM HAS_SKILL),
 
-    Missing_Count (per_id, cnt) AS (
-      SELECT per_id, COUNT(ks_code) cnt
+    Missing_Count (PER_ID, CNT) AS (
+      SELECT PER_ID, COUNT(KS_CODE) CNT
       FROM Missing_Skills
-      GROUP BY per_id)
+      GROUP BY PER_ID)
 
-SELECT per_id, cnt
+SELECT PER_ID, CNT
 FROM Missing_Count
-WHERE cnt = 2
-ORDER BY cnt ASC;
-/*20. Given a job code and its corresponding missing-k list specified in Question 19. Find every skill that is needed by at least one person in the given missing-k list. List each skill code and the number of people who need it in the descending order of the people counts.
---run 19 then */
+WHERE CNT = 2
+ORDER BY CNT ASC
 
+/*20. Given a job code and its corresponding missing-k list specified in Question 19. Find every skill that is needed by at least one person in the given missing-k list. List each skill code and the number of people who need it in the descending order of the people counts. */
 
-WITH Missing_Skills (per_id, ks_code) AS (
-  SELECT per_id, ks_code
-  FROM person, required_skill
-  WHERE job_code = ?
+/* TODO FIX THIS ONE */
+
+WITH Missing_Skills (PER_ID, KS_CODE) AS (
+  SELECT PER_ID, KS_CODE
+  FROM PERSON, REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
   SELECT *
-  FROM has_skill),
+  FROM HAS_SKILL),
+
+    Missing_Count (PER_ID, CNT) AS (
+      SELECT PER_ID, COUNT(KS_CODE) CNT
+      FROM Missing_Skills
+      GROUP BY PER_ID)
+
+SELECT PER_ID, CNT
+FROM Missing_Count
+WHERE CNT = 2
+ORDER BY CNT ASC
+
+WITH Missing_Skills (PER_ID, KS_CODE) AS (
+  SELECT PER_ID, KS_CODE
+  FROM PERSON, REQUIRED_SKILL
+  WHERE JOB_CODE = ?
+  MINUS
+  SELECT *
+  FROM HAS_SKILL),
 
 
-    SELECT ks_code, COUNT(per_id) cnt
-                                  FROM Missing_Skills
-                                  GROUP BY ks_code
-                                  ORDER BY cnt DESC;
+    SELECT KS_CODE, COUNT(PER_ID) CNT
+    FROM Missing_Skills
+    GROUP BY KS_CODE
+    ORDER BY CNT DESC;
 
 /* 21.In a local or national crisis, we need to find all the people who once held a job of the special job category identifier. */
-SELECT per_id
-FROM work_history NATURAL JOIN job
-WHERE cate_code = ?, end_date IS NOT NULL;
+
+SELECT PER_ID
+FROM WORK_HISTORY NATURAL JOIN JOB
+WHERE CATE_CODE = ? AND DATE_END IS NOT NULL
 
 
 /* 22. Find all the unemployed people who once held a job of the given job identifier. */
-SELECT per_id
-FROM work_history NATURAL JOIN job
-WHERE job_code = ? AND start_date IS NULL;
+
+SELECT PER_ID
+FROM WORK_HISTORY NATURAL JOIN JOB
+WHERE JOB_CODE = ? AND DATE_START IS NULL
+
 /*
---tu's version
---SELECT per_id
---FROM work_history
---WHERE job_code = ?
---MINUS
---SELECT per_id
---FROM job
+  tu's version for 22
+
+  SELECT per_id
+  FROM work_history
+  WHERE job_code = ?
+  MINUS
+  SELECT per_id
+  FROM job
 */
 
 /* 23. Find out the biggest employer in terms of number of employees and the total amount of salaries and wages paid to employees. (Two queries)
---A. */
-WITH total_employee(comp_name, numemploy) AS (
-    SELECT comp_name, COUNT(per_id)
-    FROM work_history NATURAL JOIN job NATURAL JOIN company
-    WHERE date_end IS NULL
-    GROUP BY (comp_name)
+  A. */
+
+WITH Total_employee(COMP_NAME, NUM_EMPLOY) AS (
+    SELECT COMP_NAME, COUNT(PER_ID)
+    FROM WORK_HISTORY NATURAL JOIN JOB NATURAL JOIN COMPANY
+    WHERE DATE_END IS NULL
+    GROUP BY (COMP_NAME)
 )
 
-SELECT comp_name
-FROM total_employee
-WHERE numemploy = (select MAX(numemploy) FROM total_employee);
+SELECT COMP_NAME
+FROM Total_employee
+WHERE NUM_EMPLOY = (SELECT MAX(NUM_EMPLOY) FROM Total_employee)
 
 /* 23B.  */
 
-WITH Total_pay(comp_id, COMP_NAME, salary) AS (
-    SELECT COMP_ID, COMP_NAME,sum(CASE WHEN PAY_TYPE='H' THEN JOB.PAY_RATE*1920
+WITH Total_pay(COMP_ID, COMP_NAME, SALARY) AS (
+    SELECT COMP_ID, COMP_NAME, sum(CASE WHEN PAY_TYPE='H' THEN JOB.PAY_RATE*1920
                                   WHEN PAY_TYPE='S' THEN PAY_RATE
                                   END) SALARY
     FROM JOB NATURAL JOIN COMPANY NATURAL JOIN WORK_HISTORY
-    Where DATE_END is NULL
+    WHERE DATE_END IS NULL
     GROUP BY COMP_ID, COMP_NAME
 )
 
-SELECT comp_name
+SELECT COMP_NAME
 FROM Total_pay
-WHERE salary = (SELECT MAX(salary) FROM Total_pay);
-
+WHERE SALARY = (SELECT MAX(SALARY) FROM Total_pay)
 
 /* 24.  Find out the job distribution among business sectors; find out the biggest sector in terms of number of employees and the total amount of salaries and wages paid to employees. (Two queries)
---A. */
-SELECT PRIMARY_SECTOR, COUNT(comp_id)
-FROM business_sector NATURAL JOIN company)
-WHERE primary_sector = sec_name)
-ORDER BY COUNT(comp_id) ASC;
+  A. */
+/* TODO FIX THIS ONE */
 
-/* --B.
---a repeat of 23 with an extra business sector layer */
+SELECT PRIMARY_SECTOR, COUNT(COMP_ID)
+FROM BUSINESS_SECTOR NATURAL JOIN COMPANY
+WHERE PRIMARY_SECTOR = SEC_NAME
+ORDER BY COUNT(COMP_ID) ASC;
 
-WITH Total_pay(comp_id, salary) AS (
+/* 24B.
+A repeat of 23 with an extra business sector layer */
+
+WITH Total_pay(COMP_ID, SALARY) AS (
     SELECT COMP_ID,sum(CASE WHEN PAY_TYPE='H' THEN JOB.PAY_RATE*1920
                        WHEN PAY_TYPE='S' THEN PAY_RATE
                        END) SALARY
     FROM JOB NATURAL JOIN COMPANY NATURAL JOIN WORK_HISTORY
-    Where DATE_END is NULL
+    WHERE DATE_END IS NULL
     GROUP BY COMP_ID, COMP_NAME
 )
 
 SELECT PRIMARY_SECTOR
-FROM Total_pay NATURAL JOIN company
-WHERE salary = (SELECT MAX(salary) FROM Total_pay);
+FROM Total_pay NATURAL JOIN COMPANY
+WHERE SALARY = (SELECT MAX(SALARY) FROM Total_pay)
 
+/* 25. */
 
-/* --26. */
+/* 26. */
+
+/* 27. */
+
+/* 28. */

@@ -52,6 +52,12 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="@dbsvcs.cs.uno.edu" type="e3449647:DbNodeDescriptor" />
         <item name="BRONGEY" type="e3449647:DbNodeDescriptor" />
+        <item name="PERSON" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="@dbsvcs.cs.uno.edu" type="e3449647:DbNodeDescriptor" />
+        <item name="BRONGEY" type="e3449647:DbNodeDescriptor" />
         <item name="REQUIRED_SKILL" type="e3449647:DbNodeDescriptor" />
       </path>
     </expand>
@@ -106,8 +112,8 @@
       <file leaf-file-name="DBQueries.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="138" column="40" lean-forward="true" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
+            <state relative-caret-position="777">
+              <caret line="422" column="9" lean-forward="false" selection-start-line="422" selection-start-column="9" selection-end-line="422" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -386,12 +392,12 @@
       <workItem from="1512073184576" duration="76000" />
       <workItem from="1512075403804" duration="3737000" />
       <workItem from="1512081223233" duration="2873000" />
-      <workItem from="1512142430856" duration="1167000" />
+      <workItem from="1512142430856" duration="3685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75019000" />
+    <option name="totallyTimeSpent" value="77537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="259" y="108" width="1841" height="1092" extended-state="6" />
@@ -1106,8 +1112,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="138" column="40" lean-forward="true" selection-start-line="138" selection-start-column="40" selection-end-line="138" selection-end-column="40" />
+        <state relative-caret-position="777">
+          <caret line="422" column="9" lean-forward="false" selection-start-line="422" selection-start-column="9" selection-end-line="422" selection-end-column="9" />
           <folding />
         </state>
       </provider>
