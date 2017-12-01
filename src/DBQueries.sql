@@ -53,8 +53,7 @@ FROM KNOWLEDGE_SKILLS JOIN REQUIRED_SKILL NATURAL JOIN JOB
 WHERE CATE_CODE = ?
 
 
-/* 8. Given a person’s identifier, list a person’s missing knowledge/skills for a specific job in a readable format
---First instance of division  */
+/* 8. Given a person’s identifier, list a person’s missing knowledge/skills for a specific job in a readable format */
 SELECT KS_TITLE, KS_DESCRIPTION
 FROM (SELECT KS_CODE
       FROM REQUIRED_SKILL
@@ -65,8 +64,7 @@ FROM (SELECT KS_CODE
       WHERE PER_ID = ?) NATURAL JOIN KNOWLEDGE_SKILLS
 
 
-/* 9.Given a person’s identifier and a job code, list the courses (course id and title) that each alone teaches all the missing knowledge/skills for this person to pursue the specific job.
---Dividion of course_ks by required skills by same c_code  */
+/* 9.Given a person’s identifier and a job code, list the courses (course id and title) that each alone teaches all the missing knowledge/skills for this person to pursue the specific job. */
 WITH Missing_Skills (KS_CODE) AS (
   SELECT KS_CODE
   FROM REQUIRED_SKILL
@@ -88,7 +86,7 @@ WHERE NOT EXISTS(
 
 
 /* 10. Suppose the skill gap of a worker and the requirement of a desired job can be covered by one course. Find the “quickest” solution for this worker. Show the course, section information and the completion date
---uses queiry 8 to build a missing skill table, then divides courses skills by it and selects the smallist date aka the quickest */
+--uses query 8 to build a missing skill table, then divides courses skills by it and selects the smallest date aka the quickest */
 WITH Missing_Skills (KS_CODE) AS (
   SELECT KS_CODE
   FROM REQUIRED_SKILL
@@ -117,33 +115,32 @@ WHERE SEC_DATE_COMP = (SELECT MIN(SEC_DATE_COMP)
 
 /* 11. . Suppose the skill gap of a worker and the requirement of a desired job can be covered by one course. Find the cheapest course to make up one’s skill gap by showing the course to take and the cost (of the section price).
 --does exactly the same thing as number 10, but sorts by price */
-WITH Missing_Skills (ks_code) AS (
-  SELECT ks_code
-  FROM required_skill
-  WHERE job_code = ?
+WITH Missing_Skills (KS_CODE) AS (
+  SELECT KS_CODE
+  FROM REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
-  SELECT ks_code
-  FROM has_skill
-  WHERE per_id = ?),
+  SELECT KS_CODE
+  FROM HAS_SKILL
+  WHERE PER_ID = ?),
 
-    Corses_Missing (c_code, title) AS (
-      SELECT c_code,title
-      FROM course
+    Corses_Missing (C_CODE, C_TITLE) AS (
+      SELECT C_CODE, C_TITLE
+      FROM COURSE
       WHERE NOT EXISTS(
-          SELECT ks_code
+          SELECT KS_CODE
           FROM Missing_Skills
           MINUS
-          SELECT ks_code
-          FROM course_ks
-          WHERE course.c_code = course_ks.c_code)
+          SELECT KS_CODE
+          FROM COURSE_KS
+          WHERE COURSE.C_CODE = COURSE_KS.C_CODE)
   )
-SELECT c_code, title, sec_num, price
-FROM Corses_Missing NATURAL JOIN section
-WHERE end_date = (SELECT MIN(price) FROM Corses_Missing NATURAL JOIN section);
+SELECT C_CODE, C_TITLE, SEC_NUM, SEC_PRICE
+FROM Corses_Missing NATURAL JOIN SECTION
+WHERE SEC_DATE_COMP = (SELECT MIN(SEC_PRICE) FROM Corses_Missing NATURAL JOIN SECTION);
 
 
-/* 12. If query #9 returns nothing, then find the course sets that their combination covers all the missing knowledge/ skills for a person to pursue a specific job. The considered course sets will not include more than three courses. If multiple course sets are found, list the course sets (with their course IDs) in the order of the ascending order of the course sets’ total costs.
---CourseSet table needs to be added */
+/* 12. If query #9 returns nothing, then find the course sets that their combination covers all the missing knowledge/ skills for a person to pursue a specific job. The considered course sets will not include more than three courses. If multiple course sets are found, list the course sets (with their course IDs) in the order of the ascending order of the course sets’ total costs. */
 WITH CourseSet_Skill(csetID, ks_code) AS (
   SELECT csetID, ks_code
   FROM CourseSet CSet JOIN course_ks CS ON CSet.c_code1=CS.c_code
