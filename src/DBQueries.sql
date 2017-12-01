@@ -1,13 +1,13 @@
 /* 1. List a specific company’s workers by names. */
 SELECT PER_NAME
-FROM person natural join work_history natral join job natural join company
-WHERE date_end IS null AND comp_name = ?;
+FROM PERSON NATURAL JOIN WORK_HISTORY NATURAL JOIN JOB NATURAL JOIN COMPANY
+WHERE DATE_END IS NULL AND COMP_NAME = ?
 
 /* 2. List a specific company’s staff by salary in descending order. */
-SELECT pay_rate
-FROM job NATURAL JOIN work_history NATURAL JOIN company
-WHERE comp_name = ?, pay_type = "s"
-ORDER BY pay_rate DESC;
+SELECT PAY_RATE
+FROM JOB NATURAL JOIN WORK_HISTORY NATURAL JOIN COMPANY
+WHERE COMP_NAME = ? AND PAY_TYPE = 'S'
+ORDER BY PAY_RATE DESC
 
 /* 3. List companies’ labor cost (total salaries and wage rates by 1920 hours) in descending order. */
 SELECT COMP_ID, COMP_NAME,
@@ -20,99 +20,99 @@ GROUP BY COMP_ID, COMP_NAME
 ORDER BY SALARY DESC
 
 /* 4. Given a person’s identifier, find all the jobs this person is currently holding and worked in the past. */
-SELECT job_code
-FROM work_history
-WHERE per_id = ?
+SELECT JOB_CODE
+FROM WORK_HISTORY
+WHERE PER_ID = ?
 
 
 /* 5. Given a person’s identifier, list this person’s knowledge/skills in a readable format. */
-SELECT KS_TITLE, ks_code
-FROM KNOWLEDGE_SKILLS NATURAL JOIN has_skill
-WHERE per_id = ?
+SELECT KS_TITLE, KS_CODE
+FROM KNOWLEDGE_SKILLS NATURAL JOIN HAS_SKILL
+WHERE PER_ID = ?
 
 
 /* 6. Given a person’s identifier, list the skill gap between the requirements of this worker’ job(s) and his/her skills. */
-SELECT ks_code
-FROM work_history NATURAL JOIN required_skill
-WHERE per_id = ?
+SELECT KS_CODE
+FROM WORK_HISTORY NATURAL JOIN REQUIRED_SKILL
+WHERE PER_ID = ?
 MINUS
-SELECT ks_code
-FROM has_skill
-WHERE per_id = ?;
+SELECT KS_CODE
+FROM HAS_SKILL
+WHERE PER_ID = ?
 
 
 /* 7. List the required knowledge/skills of a job and a job category in a readable format. (Two queries)
 --A. */
-SELECT ks_title, ks_description
-FROM knowledge_skills NATURAL JOIN required_skill
-WHERE job_code = ?;
+SELECT KS_TITLE, KS_DESCRIPTION
+FROM KNOWLEDGE_SKILLS NATURAL JOIN REQUIRED_SKILL
+WHERE JOB_CODE = ?
 
 /* 7B */
-SELECT ks_title, ks_description
-FROM knowledge_skills JOIN required_skill NATURAL JOIN job
-WHERE cate_code = ?;
+SELECT KS_TITLE, KS_DESCRIPTION
+FROM KNOWLEDGE_SKILLS JOIN REQUIRED_SKILL NATURAL JOIN JOB
+WHERE CATE_CODE = ?
 
 
 /* 8. Given a person’s identifier, list a person’s missing knowledge/skills for a specific job in a readable format
 --First instance of division  */
-SELECT ks_title, ks_description
-FROM (SELECT ks_code
-      FROM required_skill
-      WHERE job_code = ?
+SELECT KS_TITLE, KS_DESCRIPTION
+FROM (SELECT KS_CODE
+      FROM REQUIRED_SKILL
+      WHERE JOB_CODE = ?
       MINUS
-      SELECT ks_code
-      FROM has_skill
-      WHERE per_id = ?) NATURAL JOIN knowledge_skills;
+      SELECT KS_CODE
+      FROM HAS_SKILL
+      WHERE PER_ID = ?) NATURAL JOIN KNOWLEDGE_SKILLS
 
 
 /* 9.Given a person’s identifier and a job code, list the courses (course id and title) that each alone teaches all the missing knowledge/skills for this person to pursue the specific job.
 --Dividion of course_ks by required skills by same c_code  */
-WITH Missing_Skills (ks_code) AS (
-  SELECT ks_code
-  FROM required_skill
-  WHERE job_code = 2
+WITH Missing_Skills (KS_CODE) AS (
+  SELECT KS_CODE
+  FROM REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
-  SELECT ks_code
-  FROM has_skill
-  WHERE per_id = 2)
+  SELECT KS_CODE
+  FROM HAS_SKILL
+  WHERE PER_ID = ?)
 
-SELECT c_code, c_title
-FROM course, Missing_Skills
+SELECT C_CODE, C_TITLE
+FROM COURSE, Missing_Skills
 WHERE NOT EXISTS(
-    SELECT ks_code
+    SELECT KS_CODE
     FROM Missing_Skills
     MINUS
-    SELECT ks_code
-    FROM course_ks
-    WHERE course.c_code = course_ks.c_code);
+    SELECT KS_CODE
+    FROM COURSE_KS
+    WHERE COURSE.C_CODE = COURSE_KS.C_CODE)
 
 
 /* 10. Suppose the skill gap of a worker and the requirement of a desired job can be covered by one course. Find the “quickest” solution for this worker. Show the course, section information and the completion date
 --uses queiry 8 to build a missing skill table, then divides courses skills by it and selects the smallist date aka the quickest */
-WITH Missing_Skills (ks_code) AS (
-  SELECT ks_code
-  FROM required_skill
-  WHERE job_code = 13
+WITH Missing_Skills (KS_CODE) AS (
+  SELECT KS_CODE
+  FROM REQUIRED_SKILL
+  WHERE JOB_CODE = ?
   MINUS
-  SELECT ks_code
-  FROM has_skill
-  WHERE per_id = 2),
+  SELECT KS_CODE
+  FROM HAS_SKILL
+  WHERE PER_ID = ?),
 
-    Courses_Missing (c_code, c_title) AS (
-      SELECT c_code,c_title
-      FROM course, Missing_Skills
+    Courses_Missing (C_CODE, C_TITLE) AS (
+      SELECT C_CODE, C_TITLE
+      FROM COURSE, Missing_Skills
       WHERE NOT EXISTS(
-          SELECT ks_code
+          SELECT KS_CODE
           FROM Missing_Skills
           MINUS
-          SELECT ks_code
-          FROM course_ks
-          WHERE course.c_code = course_ks.c_code)
+          SELECT KS_CODE
+          FROM COURSE_KS
+          WHERE COURSE.C_CODE = COURSE_KS.C_CODE)
   )
-SELECT c_code, c_title, sec_num, sec_date_comp
-FROM Courses_Missing NATURAL JOIN section
-WHERE sec_date_comp = (SELECT MIN(sec_date_comp)
-                       FROM Courses_Missing NATURAL JOIN section);
+SELECT C_CODE, C_TITLE, SEC_NUM, SEC_DATE_COMP
+FROM Courses_Missing NATURAL JOIN SECTION
+WHERE SEC_DATE_COMP = (SELECT MIN(SEC_DATE_COMP)
+                       FROM Courses_Missing NATURAL JOIN SECTION)
 
 
 /* 11. . Suppose the skill gap of a worker and the requirement of a desired job can be covered by one course. Find the cheapest course to make up one’s skill gap by showing the course to take and the cost (of the section price).

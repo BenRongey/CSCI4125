@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e59b053-6b55-42e5-9297-905146a0c78a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/96b8195d-5d47-42ce-8ec6-220e64678bd7/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/96b8195d-5d47-42ce-8ec6-220e64678bd7/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/96b8195d-5d47-42ce-8ec6-220e64678bd7/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/96b8195d-5d47-42ce-8ec6-220e64678bd7/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DB/Main.class" afterPath="$PROJECT_DIR$/out/production/DB/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/96b8195d-5d47-42ce-8ec6-220e64678bd7.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/96b8195d-5d47-42ce-8ec6-220e64678bd7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DB/CreateSchema.sql" afterPath="$PROJECT_DIR$/out/production/DB/CreateSchema.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DB/DBQueries.sql" afterPath="$PROJECT_DIR$/out/production/DB/DBQueries.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DB/DataInsert.sql" afterPath="$PROJECT_DIR$/out/production/DB/DataInsert.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBQueries.sql" afterPath="$PROJECT_DIR$/src/DBQueries.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataInsert.sql" afterPath="$PROJECT_DIR$/src/DataInsert.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,7 +59,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
@@ -113,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBQueries.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBQueries.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="813">
+              <caret line="114" column="65" lean-forward="false" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -396,12 +386,12 @@
       <workItem from="1512073184576" duration="76000" />
       <workItem from="1512075403804" duration="3737000" />
       <workItem from="1512081223233" duration="2873000" />
-      <workItem from="1512142430856" duration="6000" />
+      <workItem from="1512142430856" duration="746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73858000" />
+    <option name="totallyTimeSpent" value="74598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="259" y="108" width="1841" height="1092" extended-state="6" />
@@ -1054,14 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataInsert.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1119,6 +1101,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="114" column="65" lean-forward="false" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
