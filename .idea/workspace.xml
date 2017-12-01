@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e59b053-6b55-42e5-9297-905146a0c78a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DBQueries.sql" afterPath="$PROJECT_DIR$/src/DBQueries.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConnectionConstruct.java" afterPath="$PROJECT_DIR$/src/ConnectionConstruct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,55 +66,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="162" column="79" lean-forward="false" selection-start-line="162" selection-start-column="79" selection-end-line="162" selection-end-column="79" />
+            <state relative-caret-position="306">
+              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-                <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-                <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-                <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-                <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-                <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-                <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-                <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
+                <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+                <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+                <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+                <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+                <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+                <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+                <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+                <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBQueries.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBQueries.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="422" column="9" lean-forward="false" selection-start-line="422" selection-start-column="9" selection-end-line="422" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="398" column="7" lean-forward="true" selection-start-line="398" selection-start-column="7" selection-end-line="398" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -122,11 +123,9 @@
       <file leaf-file-name="ConnectionConstruct.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ConnectionConstruct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -185,13 +184,13 @@
         <option value="$PROJECT_DIR$/src/EvaluateQuery.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0242055a-3ca6-462c-ac2d-c51eb43bb4fc/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/005cb320-b737-47b2-b96e-1e233e90bcb3/console.sql" />
-        <option value="$PROJECT_DIR$/src/ConnectionConstruct.java" />
         <option value="$PROJECT_DIR$/src/QueryTest.sql" />
         <option value="$PROJECT_DIR$/src/CreateSchema.sql" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/DataInsert.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/96b8195d-5d47-42ce-8ec6-220e64678bd7/console.sql" />
         <option value="$PROJECT_DIR$/src/DBQueries.sql" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/ConnectionConstruct.java" />
       </list>
     </option>
   </component>
@@ -392,12 +391,12 @@
       <workItem from="1512073184576" duration="76000" />
       <workItem from="1512075403804" duration="3737000" />
       <workItem from="1512081223233" duration="2873000" />
-      <workItem from="1512142430856" duration="3685000" />
+      <workItem from="1512142430856" duration="3990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77537000" />
+    <option name="totallyTimeSpent" value="77842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="259" y="108" width="1841" height="1092" extended-state="6" />
@@ -405,6 +404,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22854078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -427,7 +427,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22854078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2344086" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -478,9 +477,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -506,38 +503,38 @@
           <caret line="130" column="42" lean-forward="false" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-            <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-            <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-            <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-            <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-            <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-            <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+            <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+            <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+            <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+            <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+            <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
           </folding>
         </state>
       </provider>
@@ -562,9 +559,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -590,38 +585,38 @@
           <caret line="140" column="41" lean-forward="false" selection-start-line="140" selection-start-column="41" selection-end-line="140" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-            <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-            <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-            <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-            <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-            <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-            <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+            <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+            <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+            <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+            <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+            <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
           </folding>
         </state>
       </provider>
@@ -646,9 +641,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,38 +667,38 @@
           <caret line="366" column="0" lean-forward="false" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-            <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-            <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-            <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-            <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-            <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-            <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+            <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+            <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+            <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+            <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+            <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
           </folding>
         </state>
       </provider>
@@ -730,9 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -758,38 +749,38 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-            <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-            <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-            <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-            <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-            <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-            <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+            <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+            <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+            <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+            <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+            <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
           </folding>
         </state>
       </provider>
@@ -814,9 +805,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -842,38 +831,38 @@
           <caret line="178" column="57" lean-forward="false" selection-start-line="178" selection-start-column="57" selection-end-line="178" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-            <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-            <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-            <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-            <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-            <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-            <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+            <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+            <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+            <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+            <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+            <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
           </folding>
         </state>
       </provider>
@@ -898,9 +887,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -924,9 +911,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,38 +921,38 @@
           <caret line="22" column="68" lean-forward="false" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-            <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-            <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-            <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-            <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-            <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-            <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+            <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+            <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+            <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+            <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+            <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
           </folding>
         </state>
       </provider>
@@ -1058,63 +1043,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="162" column="79" lean-forward="false" selection-start-line="162" selection-start-column="79" selection-end-line="162" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1512064152604" expanded="true" signature="3105:3178" ph="SELECT job_c... job" />
-            <marker date="1512064152604" expanded="true" signature="3105:3207" ph="SELECT job_c... " />
-            <marker date="1512064152604" expanded="true" signature="3105:3208" ph="SELECT JOB_C... JOB" />
-            <marker date="1512064152604" expanded="true" signature="3756:3794" ph="Insert into work_history... " />
-            <marker date="1512064152604" expanded="true" signature="4167:4198" ph="INSERT INTO TAKES... " />
-            <marker date="1512064152604" expanded="true" signature="4178:4198" ph="Insert into takes... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4443" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4458" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4473" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4507" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4560" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4587" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4588" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4617" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4651" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4697" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4699" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4737" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4792" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4793" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4831" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4832" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4861" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4908" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4909" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4935" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4936" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4965" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:4999" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4410:5069" ph="WITH Missing... " />
-            <marker date="1512064152604" expanded="true" signature="4466:4473" ph="SELECT ks_co... " />
-            <marker date="1512064152604" expanded="true" signature="4722:4737" ph="SELECT c_cod... " />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="398" column="7" lean-forward="true" selection-start-line="398" selection-start-column="7" selection-end-line="398" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ConnectionConstruct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBQueries.sql">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="422" column="9" lean-forward="false" selection-start-line="422" selection-start-column="9" selection-end-line="422" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="306">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1512147213570" expanded="true" signature="3092:3165" ph="SELECT job_c... job" />
+            <marker date="1512147213570" expanded="true" signature="3092:3194" ph="SELECT job_c... " />
+            <marker date="1512147213570" expanded="true" signature="3092:3195" ph="SELECT JOB_C... JOB" />
+            <marker date="1512147213570" expanded="true" signature="3743:3781" ph="Insert into work_history... " />
+            <marker date="1512147213570" expanded="true" signature="4154:4185" ph="INSERT INTO TAKES... " />
+            <marker date="1512147213570" expanded="true" signature="4165:4185" ph="Insert into takes... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4430" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4445" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4460" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4494" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4547" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4574" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4575" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4604" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4638" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4684" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4686" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4724" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4779" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4780" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4818" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4819" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4848" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4895" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4896" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4922" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4923" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4952" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:4986" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4397:5056" ph="WITH Missing... " />
+            <marker date="1512147213570" expanded="true" signature="4453:4460" ph="SELECT ks_co... " />
+            <marker date="1512147213570" expanded="true" signature="4709:4724" ph="SELECT c_cod... " />
+          </folding>
         </state>
       </provider>
     </entry>

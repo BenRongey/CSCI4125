@@ -1,24 +1,20 @@
-
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.*;
 
-public class ConnectionConstruct {
+class ConnectionConstruct {
 
-    final String connectionProtocol;
-    final String dbLocation;
+    private final String connectionProtocol;
+    private final String dbLocation;
 
-    public ConnectionConstruct(String connectionProtocol, String host, String port, String sID) {
+    protected ConnectionConstruct(String connectionProtocol, String host, String port, String sID) {
 
         this.dbLocation = "@" +host + ":" + port + ":" + sID;
         this.connectionProtocol = connectionProtocol;
     }
 
-    public Connection initializeDBConnect(String oracleUser, String oraclePass) throws SQLException {
+     Connection initializeDBConnect() throws SQLException {
         DriverManager.registerDriver(new oracle.jdbc.driver.OracleDriver());
         String url = connectionProtocol + ":" + dbLocation;
         System.out.println("DB Connection URL = " +url);
-        Connection connect = DriverManager.getConnection(url, oracleUser, oraclePass);
-        return connect;
+         return DriverManager.getConnection(url, "brongey", "zW4qhxXH");
     }
 }

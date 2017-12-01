@@ -11,7 +11,7 @@ public class Main {
 
 
     private static Connection connect;
-    static List<PreparedStatement> queries;
+    private static List<PreparedStatement> queries;
 
     public static void main(String[] args) {
 
@@ -20,7 +20,7 @@ public class Main {
 
         try {
 
-            connect = build.initializeDBConnect("brongey", "zW4qhxXH");
+            connect = build.initializeDBConnect();
             queries = parseSQLFile("src/DBQueries.sql");
 
             int selection = 0;
