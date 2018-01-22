@@ -107,9 +107,8 @@ public class Main {
         statement.setInt(1, comp_id);
         ResultSet result = statement.executeQuery();
 
-        if (result.isBeforeFirst() == false) {
+        if (!result.isBeforeFirst()) {
             System.out.println("This company has no jobs available");
-            return;
         } else {
             System.out.println("Jobs available at this company:");
             printSQLResults(result);
